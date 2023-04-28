@@ -4,18 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
 
-    <h1 id="costo"></h1>
+    <main>
+        <div class="container">
+            <div class="ticket">
+                <h1>Boolean Ticket Train</h1>
+                <form class="train-ticket" action="">
+                    <div class="col">
+                        <label for="fname">Inserisci Nome e Cognome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="col">
+                        <label for="fchilometri">Inserisci i chilometri da percorrere</label>
+                        <input type="text" name="chilometri" id="chilometri" placeholder="Chilometri">
+                    </div>
+                    <div class="col">
+                        <label for="feta">Inserisci la tua età</label>
+                        <input type="text" name="userEta" id="userEta" placeholder="Età"> 
+                    </div>
+                    
+                </form>
     
-    <form action="">
-        <input type="text" name="chilometri" id="chilometri" placeholder="Chilometri">
-        <input type="text" name="userEta" id="userEta" placeholder="Età">
-        <button id="salva" type="button">Salva</button>
-    </form>
+                <form class="button" action="">
+                    <button id="salva" type="button">Salva</button>
+                    <button id="annulla" type="button">Annulla</button>
+                </form>
+            </div>
+            <div class="after-ticket">
+                <h2>Dettaglio passeggeri</h2>
+                <div class="dettagli">
+                    <div class="after-name">
+                        <h3>Nome passeggero</h3>
+                        <h4 id="name-after"></h4>
+                    </div>
+                    <div class="offerta">
+                        <h3>Offerta</h3>
+                        <h4>Biglietto standard</h4>
+                    </div>
+                    <div class="costo-ticket">
+                        <h3>Costo</h3>
+                        <h4 id="costo"></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </main>
+    
+    
+    
     
     <script type="text/javascript" src="script.js"></script>
 </body>

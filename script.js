@@ -2,20 +2,23 @@
 let prezzoBiglietto, sconto, prezzoFinale;
 const cifra= "€";
 
-const salva= document.getElementById("salva");
-
-// Chiediamo quanti chilometri deve percorrere 
-
-
 salva.addEventListener("click",calcola)
     
 function calcola(){
+
+    // Chiediamo il nome
+    const name= document.getElementById("nome").value;
+    console.log(name);
+
+    // Chiediamo quanti chilometri deve percorrere 
     const chilometri= parseInt(document.getElementById("chilometri").value);
     console.log(chilometri);
 
-// Chiediamo l'età
+    // Chiediamo l'età
     const userEta = document.getElementById("userEta").value;
     console.log(userEta);
+
+    const salva= document.getElementById("salva");
 
 
     if (userEta <= 18) {
@@ -39,12 +42,12 @@ function calcola(){
     // Sconto
     bigliettoSconto = prezzoBiglietto * sconto / 100  ;
     console.log(bigliettoSconto);
-    
     prezzoFinale = prezzoBiglietto - bigliettoSconto ;
     console.log(prezzoFinale);
-    
-    
+
+    // Output
     document.getElementById("costo").innerHTML= prezzoFinale.toFixed(2) + cifra;
+    document.getElementById("name-after").innerHTML= name;
 }
 
 

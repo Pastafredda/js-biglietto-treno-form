@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: rgba(0, 63, 97, 0.793);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.ticket{
+    background-color: rgb(0, 63, 97);
+    border-radius: 20px;
+}
+
+.ticket h1{
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.train-ticket{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.button button{
+    padding: 10px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.button button:hover{
+    cursor: pointer;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: white;
+    width: 300px;
+}
+
+.col label{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.col input{
+    border-radius: 6px;
+    outline-style: none;
+    padding: 6px;
+   
+}
+
+/* after ticket */
+
+.after-ticket{
+    
+    position: absolute;
+    bottom: 50px;
+    width: 50%;
+    background-color: rgb(0, 89, 255);
+    border-radius: 20px;
+}
+
+.after-ticket h2{
+    padding: 20px;
+    color: white;
+    border-bottom: 3px solid rgb(106, 203, 255);
+}
+
+.dettagli{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.dettagli h3{
+    margin: 30px 0;
+}
+
+.dettagli h4{
+    margin-bottom: 20px;
+}
