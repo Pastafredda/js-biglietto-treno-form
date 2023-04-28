@@ -1,22 +1,30 @@
 // Dichiarazione di variabili
-let numeroKm , eta , prezzoBiglietto, sconto, prezzoFinale;
+let prezzoBiglietto, sconto, prezzoFinale;
 const cifra= "€";
+const chilometri= document.getElementById("chilometri");
+const userEta = document.getElementById("userEta");
+const salva= document.getElementById("salva");
 
 // Chiediamo quanti chilometri deve percorrere 
-function chilometri(){
-    document.getElementById("km").value="";
-}
+document.getElementById("chilometri").value="";
+console.log(chilometri);
 
 // Chiediamo l'età
-function laMiaEta(){
-    document.getElementById("eta").value="";
-}
+document.getElementById("userEta").value="";
+console.log(userEta);
 
-if (laMiaEta <= 18) {
+salva.addEventListener("click",
+    
+)
+
+
+
+
+if (userEta <= 18) {
     // Sconto per minorenni
     sconto = 20;
     
-} else if (laMiaEta >= 65) {
+} else if (userEta >= 65) {
     // Sconto per over 65
     sconto = 40;
     
@@ -27,8 +35,7 @@ if (laMiaEta <= 18) {
 console.log(sconto);
 
 // Prezzo del biglietto 
-prezzoBiglietto = chilometri * 0.21 ;
-console.log(prezzoBiglietto);
+
 
 // Sconto
 bigliettoSconto = prezzoBiglietto * sconto / 100  ;
