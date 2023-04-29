@@ -20,6 +20,8 @@ function calcola(){
 
     const salva= document.getElementById("salva");
 
+  
+
 
     if (userEta <= 18) {
         // Sconto per minorenni
@@ -45,11 +47,32 @@ function calcola(){
     prezzoFinale = prezzoBiglietto - bigliettoSconto ;
     console.log(prezzoFinale);
 
+    // Facciamo apparire il biglietto
+    const afterTicket= document.querySelector(".after-ticket");
+    afterTicket.classList.add("active")
+
+    // Numero della carrozza casuale
+    const numeroCarrozza= document.getElementById("carrozza")
+    carrozza= Math.floor(Math.random() * 10) + 1;
+    console.log(carrozza);
+
     // Output
     document.getElementById("costo").innerHTML= prezzoFinale.toFixed(2) + cifra;
     document.getElementById("name-after").innerHTML= name;
+    document.getElementById("carrozza").innerHTML= carrozza;
+
 }
 
+  // Resettiamo il form
+  const annulla= document.getElementById("annulla");
+  annulla.addEventListener("click", resetForm)
+
+  function resetForm () {
+      
+    document.getElementById("train-ticket").reset();
+  }
+
+  
 
 
 
